@@ -73,6 +73,7 @@ export interface PropertyOptions {
 	readOnly?: boolean
 	computed?: string
 	observer?: string | ((val: any, old: any) => void)
+	statePath?: string
 }
 
 function createProperty(proto: any, name: string, options?: PropertyOptions): void {
